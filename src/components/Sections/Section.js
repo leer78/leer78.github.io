@@ -98,7 +98,7 @@ const Section = () => {
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
                         <Link to="/EQMount" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
                         <h3>Equitorial Mount</h3>
-                        <p>Automatic equitorial mount for Astrophotgraphy. Rotates with the stars for better exposures </p>
+                        <p>Automatic equitorial mount for Astrophotgraphy. Rotates with the stars for better exposures and more centered images for stacking </p>
                         <ul>
                             <li>2024</li>
                             <li>Controls</li>
