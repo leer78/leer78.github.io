@@ -35,14 +35,15 @@ const Section = () => {
                             <p>Hi there! I'm Ryan and this is the personal portfolio site. I'm using it to share some of the personal projects I've worked on tying academic teachings and practical experiences together. </p>
                             <p>An aspiring engineering student with a fascination for technology and software development. I believe that the there is limitless potential in the field and would allow for me to contribute in the progression of mankind.</p>
                             <div className='lastSec'>
-                                <p>Ever since I was younger, I've always been building things and tinkering with the inner workings of technology. I realize now that to my younger self, what I've learned in engineering would've looked like magic. And that's what keeps me interested!</p>
+                                <p>I build engineering projects.</p>
                             </div>
                         </div>
                     </div>
                     <div className='profileColumn'>
                         <div className='profileMiddle'>
                             {/* picture */}
-                            <div className='profilePicture'>  </div>
+                            {/*<div className='profilePicture'>  </div>*/}
+                            <img src='/images/headshot.png' alt=''/> 
                         </div>
                     </div>
                     <div className='profileColumn'>
@@ -93,6 +94,29 @@ const Section = () => {
                 </div>
 
                 <div className = 'projectsContainer'>
+                <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/EQMount" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Equitorial Mount</h3>
+                        <p>Automatic equitorial mount for Astrophotgraphy. Rotates with the stars for better exposures </p>
+                        <ul>
+                            <li>2024</li>
+                            <li>Controls</li>
+                            <li>CAD</li>
+                        </ul> 
+                    </div>
+                    <div className = 'box'>
+                        <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
+                        <Link to="/MarsRover" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
+                        <h3>Mars Rover</h3>
+                        <p>A Perserverance Rover Replica including radio remote, live camera feed, and in depth controls</p>
+                        <ul>
+                            <li>2024</li>
+                            <li>Controls</li>
+                            <li>CAD</li>
+                            <li>Circuitry</li>
+                        </ul> 
+                    </div>
                     <div className = 'box'>
                         <div className = 'folderIcon'><AiFillFolderOpen size = {50}/></div>
                         <Link to="/MacroKeypad" id = 'externalLinkIcon'><FiExternalLink size = {30} color = 'rgb(16, 175, 159)'/></Link>
@@ -285,6 +309,7 @@ const Section = () => {
                                         <li>MECHTRON 3DX4 || Dynamic Models and Control Physical Systems </li>
                                         <li>MECHTRON 3TB4 || Embedded Systems Design II </li>
                                         <li>SFWRENG 3SH3 || Operating Systems </li>
+                                        <li>MECHTRON 4AA4 || Real-Time Systems and Control Applications </li>
 
                                     </ul>
                                 </div>

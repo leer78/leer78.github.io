@@ -17,6 +17,8 @@ import SGSC from "./components/ProjectPage/SGSC/page";
 import RA from "./components/ProjectPage/RA/page";
 import UB from "./components/ProjectPage/UB/page";
 import PID from "./components/ProjectPage/PID/page";
+import MR from "./components/ProjectPage/MR/page";
+import EQ from "./components/ProjectPage/EQ/page";
 
 
 
@@ -42,7 +44,18 @@ class App extends Component {
                           <Section/>
                       </Fragment>
                     }/>
-                    
+                    <Route path="/EQMount" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <EQ />
+                           </Fragment>
+                      }> </Route>
+                    <Route path="/MarsRover" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <MR />
+                           </Fragment>
+                      }> </Route>
                  
                       <Route path="/MacroKeypad" element= {
                            <Fragment>

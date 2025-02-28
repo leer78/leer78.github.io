@@ -71,22 +71,19 @@
     font-size: 18px;
 }
 
-.profilePicture{
-   width: auto;
-   height: 50%;
-   margin: 2%;
-   margin-left: 15%;
-   margin-right: 15%;
-   margin-top: 20%;
-   background-size: 100%;
-   background-image: url('./headshot.png');
-   background-repeat: no-repeat;
-   /* border: 5px solid lightskyblue;
-   border-radius: 50%; */
-   object-fit: contain;
-   
-}
-
+.profilePicture {
+    width: auto;
+    height: auto;  /* Allow the height to adjust based on content */
+    margin: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20%;
+    background-size: cover;  /* Ensure the image covers the area */
+    background-image: url('./headshot.png');
+    background-repeat: no-repeat;
+    border-radius: 50%;  /* If you want a circular image */
+ }
+ 
 .profileColumn h3{
     position: relative;
     top: 0%;
@@ -94,6 +91,18 @@
     margin-left: 2%;
     font-weight: bold;
 }
+
+.profileMiddle img {
+    width: auto;  /* Adjust width based on aspect ratio */
+    height: 80%;  /* Adjust the height as per your design needs */
+    margin: 0%;
+    margin-left: -5%;
+    margin-right: 0%;
+    margin-top: 20%;
+    object-fit: contain;  /* Ensures the image maintains its aspect ratio and fits in the container */
+    /*border-radius: 50%;  /* Optional: Makes the image circular */
+}
+
 
 .resumeContainer{
     display: flex;

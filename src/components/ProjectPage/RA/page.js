@@ -17,7 +17,7 @@ const RA = () =>{
             <div className = "buttons">
                 <Link to="/SolarExplorerProgram" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
-                <Link to="/MacroKeypad" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
+                <Link to="/EQMount" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>
         </div>
         <div className="ProjectContainer">
