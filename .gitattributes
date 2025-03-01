@@ -1,5 +1,0 @@
-node_modules/ filter=lfs diff=lfs merge=lfs -text
-.jpg filter=lfs diff=lfs merge=lfs -text
-.png filter=lfs diff=lfs merge=lfs -text
-.jss filter=lfs diff=lfs merge=lfs -text
-.js filter=lfs diff=lfs merge=lfs -text
