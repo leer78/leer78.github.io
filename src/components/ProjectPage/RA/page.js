@@ -15,7 +15,7 @@ const RA = () =>{
         <div className="banner">  
             <h1>Ryan Lee - Project Portfolio</h1>
             <div className = "buttons">
-                <Link to="/SolarExplorerProgram" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
+                <Link to="/Escalaid" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
                 <Link to="/EQMount" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>

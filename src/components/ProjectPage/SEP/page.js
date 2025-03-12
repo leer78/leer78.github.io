@@ -17,7 +17,7 @@ const SEP = () =>{
             <div className = "buttons">
                 <Link to="/PWMThermalSensorFanController" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
-                <Link to="/RoboticArm+HapticGlove" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
+                <Link to="/Escalaid" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>
         </div>
         <div className="ProjectContainer">
