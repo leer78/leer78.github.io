@@ -541,29 +541,24 @@ const Section = () => {
                         <div className='skillsLeft'>
                             <div className='skillsHeading'>Programming</div>
                             <ul>
-                                <li>Scripting
+                                <li>PLC
                                     <div className='barContainer'>
-                                        <div className='skillScripting'> &nbsp;</div>
+                                        <div className='skillPLC'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>HTML
+                                <li>Verilog (Embedded)
                                     <div className='barContainer'>
-                                        <div className='skillHTML'> &nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>CSS
-                                    <div className='barContainer'>
-                                        <div className='skillCSS'> &nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>React
-                                    <div className='barContainer'>
-                                        <div className='skillReact'> &nbsp;</div>
+                                        <div className='skillVerilog'> &nbsp;</div>
                                     </div>
                                 </li>
                                 <li>C/C++
                                     <div className='barContainer'>
                                         <div className='skillC'> &nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>Automation
+                                    <div className='barContainer'>
+                                        <div className='skillAutomation'> &nbsp;</div>
                                     </div>
                                 </li>
                                 <li>Python
@@ -576,49 +571,45 @@ const Section = () => {
                                         <div className='skillMatlab'> &nbsp;</div>
                                     </div>
                                 </li>
+                                <li>Scripting (Perl/Ruby)
+                                    <div className='barContainer'>
+                                        <div className='skillScripting'> &nbsp;</div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
 
                     <div className='skillsColumn'>
                         <div className='skillsRight'>
-                            <div className='skillsHeading'>Enterprise Management</div>
+                            <div className='skillsHeading'>Controls</div>
                             <ul>
-                                <li>GitHub
+                                <li>PID Controllers
                                     <div className='barContainer'>
-                                        <div className='skillGitHub'> &nbsp;</div>
+                                        <div className='skillPID'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>UNIX
+                                <li>Predictive Controls
                                     <div className='barContainer'>
-                                        <div className='skillLinuxBash'> &nbsp;</div>
+                                        <div className='skillPredictiveControls'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Powershell
+                                <li>Real-Time Systems
                                     <div className='barContainer'>
-                                        <div className='skillPowershell'> &nbsp;</div>
+                                        <div className='skillRTSystem'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Excel
+                                <li>Signals and Systems
                                     <div className='barContainer'>
-                                        <div className='skillExcel'> &nbsp;</div>
+                                        <div className='skillSignalsandSystems'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Word
+                                <li>Dynamic Models
                                     <div className='barContainer'>
-                                        <div className='skillWord'> &nbsp;</div>
+                                        <div className='skillDynamicModels'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>PowerPoint
-                                    <div className='barContainer'>
-                                        <div className='skillPowerPoint'> &nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>Azure
-                                    <div className='barContainer'>
-                                        <div className='skillAzure'> &nbsp;</div>
-                                    </div>
-                                </li>
+
 
                             </ul>
                         </div>
@@ -629,19 +620,19 @@ const Section = () => {
                 <div className='skillsContainer'>
                     <div className='skillsColumn'>
                         <div className='skillsLeft'>
-                            <div className='skillsHeading'>Technical Skills</div>
+                            <div className='skillsHeading'>Mechanical</div>
                             <ul>
-                                <li>Circuitry
+                                <li>CAD Modelling
                                     <div className='barContainer'>
                                         <div className='skillCircuitry'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Soldering
+                                <li>FEA Analysis
                                     <div className='barContainer'>
                                         <div className='skillSoldering'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>CAD
+                                <li>Simulations/Assemblies
                                     <div className='barContainer'>
                                         <div className='skillCAD'> &nbsp;</div>
                                     </div>
@@ -651,7 +642,17 @@ const Section = () => {
                                         <div className='skill3DPrinting'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Logic Gates Design
+                                <li>Prototyping
+                                    <div className='barContainer'>
+                                        <div className='skillLogicGateDesign'> &nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>Machining
+                                    <div className='barContainer'>
+                                        <div className='skillLogicGateDesign'> &nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>Manufacturing
                                     <div className='barContainer'>
                                         <div className='skillLogicGateDesign'> &nbsp;</div>
                                     </div>
@@ -662,29 +663,34 @@ const Section = () => {
 
                     <div className='skillsColumn'>
                         <div className='skillsRight'>
-                            <div className='skillsHeading'>Soft Skills</div>
+                            <div className='skillsHeading'>Electronics</div>
                             <ul>
-                                <li>Communication
+                                <li>Circuit Design
                                     <div className='barContainer'>
                                         <div className='skillCommunication'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Teamwork
+                                <li>PCB Design
                                     <div className='barContainer'>
                                         <div className='skillTeamwork'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Problem Solving
+                                <li>Sensors
+                                    <div className='barContainer'>
+                                        <div className='skillInitiative'> &nbsp;</div>
+                                    </div>
+                                </li>
+                                <li>Soldering
                                     <div className='barContainer'>
                                         <div className='skillProblemSolving'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Time Management
+                                <li>Crimping
                                     <div className='barContainer'>
                                         <div className='skillTimeManagement'> &nbsp;</div>
                                     </div>
                                 </li>
-                                <li>Initiative
+                                <li>Timing Analysis
                                     <div className='barContainer'>
                                         <div className='skillInitiative'> &nbsp;</div>
                                     </div>

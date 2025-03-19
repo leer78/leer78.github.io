@@ -82,10 +82,8 @@
 .skillHTML{width: 90%; background-color: rgb(16, 175, 159)}
 .skillCSS{width: 95%; background-color: rgb(16, 175, 159)}
 .skillReact{width: 65%; background-color: rgb(16, 175, 159)}
-.skillC{width: 90%; background-color: rgb(16, 175, 159)}
-.skillPython{width: 90%; background-color: rgb(16, 175, 159)}
-.skillMatlab{width: 80%; background-color: rgb(16, 175, 159)}
-.skillScripting{width: 90%; background-color: rgb(16, 175, 159)}
+
+
 .skillGitHub{width: 90%; background-color: rgb(16, 175, 159)}
 .skillLinuxBash{width: 100%; background-color: rgb(16, 175, 159)}
 .skillPowershell{width: 75%; background-color: rgb(16, 175, 159)}
@@ -103,6 +101,41 @@
 .skillTimeManagement{width: 90%; background-color: rgb(16, 175, 159)}
 .skillInitiative{width: 95%; background-color: rgb(16, 175, 159)}
 .skillLogicGateDesign{width: 90%; background-color: rgb(16, 175, 159)}
+
+/*software*/
+.skillPLC{width: 60%; background-color: rgb(16, 175, 159)}
+.skillVerilog{width: 90%; background-color: rgb(16, 175, 159)}
+.skillC{width: 90%; background-color: rgb(16, 175, 159)}
+.skillAutomation{width: 90%; background-color: rgb(16, 175, 159)}
+.skillPython{width: 90%; background-color: rgb(16, 175, 159)}
+.skillMatlab{width: 80%; background-color: rgb(16, 175, 159)}
+.skillScripting{width: 90%; background-color: rgb(16, 175, 159)}
+
+/*controls*/
+.skillPID{width: 90%; background-color: rgb(16, 175, 159)}
+.skillPredictiveControls{width: 70%; background-color: rgb(16, 175, 159)}
+.skillRTSystem{width: 80%; background-color: rgb(16, 175, 159)}
+.skillSignalsandSystems{width: 90%; background-color: rgb(16, 175, 159)}
+.skillDynamicModels{width: 60%; background-color: rgb(16, 175, 159)}
+
+
+/*mechanical*/
+.skillCAD{width: 95%; background-color: rgb(16, 175, 159)}
+.skillFEA{width: 60%; background-color: rgb(16, 175, 159)}
+.skillSimulations{width: 90%; background-color: rgb(16, 175, 159)}
+.skill3DPrinting{width: 100%; background-color: rgb(16, 175, 159)}
+.skillPrototyping{width: 100%; background-color: rgb(16, 175, 159)}
+.skillMachining{width: 50%; background-color: rgb(16, 175, 159)}
+.skillManufacturing{width: 70%; background-color: rgb(16, 175, 159)}
+
+/*Electronics*/
+.skillCircuitDesign{width: 60%; background-color: rgb(16, 175, 159)}
+.skillPCBDesign{width: 80%; background-color: rgb(16, 175, 159)}
+.skillSensors{width: 95%; background-color: rgb(16, 175, 159)}
+.skillSoldering{width: 90%; background-color: rgb(16, 175, 159)}
+.skillCrimping{width: 90%; background-color: rgb(16, 175, 159)}
+.skillTimingAnalysis{width: 70%; background-color: rgb(16, 175, 159)}
+
 
 @media screen and (max-width: 768px) {
     .skillsContainer{
