@@ -7,7 +7,7 @@ const LandingPage = () =>{
             <div className = 'container' id = 'Home'>
                 <h1>Ryan Lee</h1>
                 <hr/>
-                <h2>I like to build things :)</h2>
+                <h2>I like to build things.</h2>
             </div>
         </>
     );

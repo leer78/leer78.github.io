@@ -52,7 +52,7 @@ const EQ = () =>{
     <h4>Results</h4>
     <p>The final equatorial mount successfully tracked celestial objects, allowing for longer exposure times without star trails. This project deepened my understanding of stepper motor control, mechanical tolerances in 3D-printed components, and astrophotography techniques.</p>
 
-    <div className='ProjectImageContainer'>
+    <div className='ProjectImageContainerLarge'>
         <figure><img src='/images/EQimg1.jpg' alt=''/><figcaption>Final Built Mount</figcaption> </figure>
         <figure><img src='/images/EQimg2.png' alt=''/><figcaption>CAD Model of the Mount</figcaption> </figure>
     </div>

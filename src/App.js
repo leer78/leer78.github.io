@@ -20,6 +20,7 @@ import PID from "./components/ProjectPage/PID/page";
 import MR from "./components/ProjectPage/MR/page";
 import EQ from "./components/ProjectPage/EQ/page";
 import MKB from "./components/ProjectPage/MKB/page";
+import BR from "./components/ProjectPage/BR/page";
 
 
 //help
@@ -45,6 +46,12 @@ class App extends Component {
                           <Section/>
                       </Fragment>
                     }/>
+                    <Route path="/McMasterBajaRacing" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <BR />
+                           </Fragment>
+                      }> </Route>
                     <Route path="/Escalaid" element= {
                            <Fragment>
                               <ScrollToTop/>

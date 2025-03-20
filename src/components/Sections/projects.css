@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Open+Sans:wght@300&display=swap');
-.projectsContainer{
+
+.projectsContainer {
     /* background-color: blue; */
     margin: 15px;
     width: 60%;
@@ -11,7 +12,7 @@
     grid-gap: 15px;
 }
 
-.box{
+.box {
     background-color: rgb(99, 95, 87);
     height: 220px;
     /* width: 200px; */
@@ -21,39 +22,43 @@
     transition: top ease 0.3s;
 }
 
-.box:hover{
+.box:hover {
     top: -10px;
 }
-.box:hover h3{
-    color: white;
-}
-.box:hover p{
-    color: white;
-}
-.box:hover li{
-    color: white;
-}
-.box:hover .folderIcon{
+
+.box:hover h3 {
     color: white;
 }
 
-.box a{
+.box:hover p {
+    color: white;
+}
+
+.box:hover li {
+    color: white;
+}
+
+.box:hover .folderIcon {
+    color: white;
+}
+
+.box a {
     position: relative;
     left: 80%;
     top: -18%;
 }
 
-.box a:hover{
+.box a:hover {
     color: white;
 }
 
-.box h3{
+.box h3 {
     margin-left: 5%;
     margin-top: -25%;
     font-weight: 900;
 }
 
-.box p{
+.box p {
     margin-left: 5%;
     margin-top: 15%;
     font-size: smaller;
@@ -61,7 +66,7 @@
     font-weight: bold;
 }
 
-.box ul{
+.box ul {
     list-style-type: none;
     position: absolute;
     left: 1vw;
@@ -71,20 +76,21 @@
     width: 100%;
 }
 
-.box li{
+.box li {
     display: inline-block;
     margin-right: 5%;
     font-family: 'Courier New', Courier, monospace;
 }
-.Note{
+
+.Note {
     position: relative;
     /* justify-content: center; */
-    margin:auto;
+    margin: auto;
     width: 50%;
     top: 10%;
 }
 
-.featuredProjectContainer{
+.featuredProjectContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +100,7 @@
 
 }
 
-.featuredProject{
+.featuredProject {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,22 +111,24 @@
     width: 70%;
 }
 
-.featuredImage img{
+.featuredImage img {
     display: flex;
     max-width: 15vw;
     height: 0%;
     border-radius: 20px;
-    transition: transform 0.3s; /* Add transition for smooth expansion */
+    transition: transform 0.3s;
+    /* Add transition for smooth expansion */
 }
 
 
-.featuredDescription{
+.featuredDescription {
     flex: 2;
     padding: 0 30px;
     display: inline-block;
 }
 
-.featuredDescription h1{
+
+.featuredDescription h1 {
     font-size: 30px;
     padding: 5px;
     background-color: rgb(163, 5, 163);
@@ -130,10 +138,11 @@
 
 }
 
-.featuredDescription h2{
+.featuredDescription h2 {
     color: rgb(95, 95, 95);
     text-align: right;
 }
+
 .featuredDescription a {
     display: inline-block;
     margin-top: 15px;
@@ -143,12 +152,55 @@
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-  }
-  .featuredDescription a:hover{
-    background-color: rgb(114, 8, 114);
-  }
+}
 
-  .featuredDescription p{
+.featuredDescription a:hover {
+    background-color: rgb(114, 8, 114);
+}
+
+.featuredDescription p {
     padding-bottom: 6px;
-  }
-  
+}
+
+
+
+
+.featuredBajaDescription {
+    flex: 2;
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.featuredBajaDescription h1 {
+    font-size: 30px;
+    padding: 5px;
+    background-color: rgb(153, 8, 8);
+    text-align: left;
+    color: white;
+    border-radius: 2px;
+
+}
+
+.featuredBajaDescription h2 {
+    color: rgb(95, 95, 95);
+    text-align: right;
+}
+
+.featuredBajaDescription a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color:rgb(153, 8, 8);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.featuredBajaDescription a:hover {
+    background-color: rgb(117, 4, 4);
+}
+
+.featuredBajaDescription p {
+    padding-bottom: 6px;
+}

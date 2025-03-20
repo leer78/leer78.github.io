@@ -15,7 +15,7 @@ const MKB = () => {
             <div className="banner">
                 <h1>Ryan Lee - Project Portfolio</h1>
                 <div className="buttons">
-                    <Link to="/SolarExplorerProgram" id='button'><FiArrowLeft size={20} color='black' /></Link>
+                    <Link to="/McMasterBajaRacing" id='button'><FiArrowLeft size={20} color='black' /></Link>
                     <Link to="/" id='button'><AiOutlineHome size={20} color='black' /></Link>
                     <Link to="/RoboticArm+HapticGlove" id='button'><FiArrowRight size={20} color='black' /></Link>
                 </div>
@@ -40,7 +40,7 @@ const MKB = () => {
                 <p>The device features three operational modes: ascend, descend, and idle. In ascend mode, the brace applies lifting force during the step-up phase of stair climbing. In descend mode, it provides controlled resistance to ease the impact of stepping down. Idle mode disengages assistance, allowing free movement for activities such as walking and sitting.</p>
 
 
-                <div className='ProjectImageContainer'>
+                <div className='ProjectImageContainerLarge'>
                     <figure><img src='/images/MKBimg1.png' alt='' /><figcaption>Final Version</figcaption></figure>
                     <figure><img src='/images/MKBimg4.png' alt='' /><figcaption>Final Build</figcaption></figure>
                 </div>
@@ -72,7 +72,7 @@ const MKB = () => {
                 </div>
                 <p>The PID control loop continuously adjusts motor output to maintain the target tension level. This ensures that assistance is applied smoothly, adapting to the user’s pace without introducing unwanted oscillations. During development, extensive tuning was performed to optimize PID coefficients, reducing response time and improving stability.</p>
                 <p>The mode selection logic ensures seamless switching between ascend, descend, and idle modes. Safety checks are incorporated to prevent unintended activation, ensuring that the brace only engages when appropriate conditions are met.</p>
-                <div className='ProjectImageContainer'>
+                <div className='ProjectImageContainerLarge'>
                     <figure><img src='/images/MKBimg12.png' alt='' /><figcaption>Control Flow</figcaption></figure>
                     <figure><img src='/images/MKBimg13.png' alt='' /><figcaption>PID Flow</figcaption></figure>
                 </div>
@@ -110,7 +110,7 @@ const MKB = () => {
                 <p>Through iterative design and testing, EscalAid has evolved into a highly functional assistive device that enhances mobility for individuals with knee impairments. The project demonstrates a full engineering cycle, incorporating problem identification, system modeling, prototyping, validation, and refinement.</p>
                 <p>Future improvements will focus on reducing weight further, optimizing battery efficiency, and exploring alternative materials for increased durability. Additional software refinements will enhance responsiveness and adaptability to different user profiles.</p>
 
-                <div className='ProjectImageContainer'>
+                <div className='ProjectImageContainerLarge'>
                 <figure><img src='/images/MKBimg15.png' alt='' /><figcaption>Me wearing the brace (revision 0)</figcaption></figure>
                 <figure><img src='/images/MKBimg16.png' alt='' /><figcaption></figcaption></figure>
                     <figure><img src='/images/MKBimg5.png' alt='' /><figcaption>Me wearing the brace (final rev)</figcaption></figure>

@@ -49,7 +49,7 @@ const MR = () =>{
 <p>With the design finalized, I moved on to fabrication. The aluminum chassis required precise cutting and drilling, which I accomplished using a drill press to create mounting points for the frame. Copper tubes were also drilled to accommodate bolts, ensuring secure connections for the rocker-bogie suspension.</p>
 <p>3D printing was a significant part of the manufacturing process. I experimented with different print settings, adjusting infill density, print orientation, and layer height to balance strength and weight. My Ender 3 Pro required frequent troubleshooting, from bed leveling to optimizing extrusion settings, to produce consistent, high-quality prints.</p>
 <p>During assembly, I carefully aligned the rocker-bogie mechanism, ensuring that all joints moved smoothly without excessive play. Bearings were added at pivot points to reduce friction and improve movement efficiency.</p>
-<div className='ProjectImageContainer'>
+<div className='ProjectImageContainerLarge'>
 <figure><img src='/images/MRimg5.png' alt=''/><figcaption>CAD Model</figcaption></figure>
 </div>
 <h5>Step 3: Electronics & Control System</h5>

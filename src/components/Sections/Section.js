@@ -78,6 +78,23 @@ const Section = () => {
                 <div className='featuredProjectContainer'>
                     <div className='featuredProject'>
                         <div className='featuredImage'>
+                            <img src="images/MBRimg1.jpg" alt="Featured Project"></img>
+                        </div>
+                        <div className='featuredBajaDescription'>
+
+                            <h1>Baja Racing </h1>
+                            <h2>McMaster Technical Engineering Team: GET DIRTY!</h2>
+                            <p>McMaster Baja Racing is a team of devoted undergraduate students at McMaster University in Hamilton, Ontario who work together to compete in the SAE Baja Series. The team designs, manufactures and races a single seat off road vehicle across North America every year.</p>
+                            {/* <a href="/RoboticArm+HapticGlove">Learn More</a> */}
+                            <Link to="/McMasterBajaRacing" id='externalLinkIcon'>Learn More</Link>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className='featuredProjectContainer'>
+                    <div className='featuredProject'>
+                        <div className='featuredImage'>
                             <img src="images/MKBimg1.png" alt="Featured Project"></img>
                         </div>
                         <div className='featuredDescription'>
@@ -92,7 +109,6 @@ const Section = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className='projectsContainer'>
                     <div className='box'>
                         <div className='folderIcon'><AiFillFolderOpen size={50} /></div>
