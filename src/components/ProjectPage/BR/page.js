@@ -53,6 +53,9 @@ const BR = () => {
                 <p>Tracks the rotational speed of the primary and secondary sheaves in the continuously variable transmission (CVT).
                     This data helps assess shifting performance and overall CVT efficiency, assisting in tuning the drivetrain for
                     optimal acceleration and power delivery.</p>
+                <div className="ProjectImageContainer">
+                    <figure><img src='/images/MBR_PRPMimg1.png' alt='' /><figcaption>Hall Effect Sensor Inside CVT Case</figcaption></figure>
+                </div>
                 <h5>How it works:</h5>
                 <p>Originally, a hall-effect sensor and magnets were used, detecting pulses each time a magnet’s positive edge
                     passed the sensor. While effective, this method had reliability concerns due to magnet placement failures.
@@ -65,7 +68,7 @@ const BR = () => {
                 <h5>What it is:</h5>
                 <p>Measures the movement of the suspension system to analyze damping characteristics and spring behavior,
                     providing insights into ride quality and handling performance.</p>
-                    <div className="ProjectImageContainer">
+                <div className="ProjectImageContainer">
                     <figure><img src='/images/MBR_STimg1.png' alt='' /><figcaption>Magnet + Sensor Mount Assembly</figcaption></figure>
                     <figure><img src='/images/MBR_STimg2.png' alt='' /><figcaption>Calibrating for Fit Line</figcaption></figure>
                 </div>
@@ -76,7 +79,7 @@ const BR = () => {
                     The data is used to tune spring rates and damping, ensuring the suspension system absorbs impacts effectively.
                     Additionally, it works alongside strain gauges on the anti-roll bar to optimize weight distribution
                     and reduce unnecessary chassis movement.</p>
-                    <div className="ProjectImageContainerLarge">
+                <div className="ProjectImageContainerLarge">
                     <figure><img src='/images/MBR_STimg3.png' alt='' /><figcaption>Validating Live Video Tests - Shake Test</figcaption></figure>
                     <figure><img src='/images/MBR_STimg4.png' alt='' /><figcaption>Validating Live Video Tests - Sharp Right Turns</figcaption></figure>
                 </div>
@@ -86,6 +89,9 @@ const BR = () => {
                 <h5>What it is:</h5>
                 <p>Measures the exact position of the primary and secondary CVT sheaves to analyze gear ratio changes
                     and optimize shifting performance. Helps validate whether CVT behavior matches theoretical shift curves.</p>
+                <div className="ProjectImageContainer">
+                    <figure><img src='/images/MBR_SPimg1.png' alt='' /><figcaption>ToF Sensor Inside CVT Case, Secondary Sheave Side</figcaption></figure>
+                </div>
                 <h5>How it works:</h5>
                 <p>We are integrating time-of-flight (ToF) sensors with ±0.1" accuracy to detect precise sheave movement.
                     This data, combined with wheel RPM, provides insights into CVT efficiency and engagement points.
@@ -148,7 +154,9 @@ const BR = () => {
                     This allows us to track throttle percentage in real time, ensuring the engine is receiving expected input.
                     Driver fatigue during endurance races can prevent full throttle application, so we implemented a light indicator
                     to alert drivers when they are not fully engaging the throttle, preventing unintentional power loss.</p>
-
+                <div className="ProjectImageContainerLarge">
+                    <figure><img src='/images/MBR_TPimg1.png' alt='' /><figcaption>Hall Effect Sensor + Throttle Control Handle</figcaption></figure>
+                </div>
                 <h4>Brake Fluid Pressure</h4>
                 <h5>What it is:</h5>
                 <p>Monitors hydraulic pressure in the brake lines to ensure the braking system is properly bled and functioning
