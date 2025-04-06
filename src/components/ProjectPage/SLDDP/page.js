@@ -32,6 +32,13 @@ const SLDDP = () =>{
 
             <h4>Overview</h4>
             <p>A digital circuit designed using finite state machines and logic gates to repetitvely output my student number. A full video can be found <a href ='https://www.youtube.com/watch?v=lDECUQmE-Zg&feature=youtu.be'>here.</a></p>
+            
+            
+            <div className="YouTubeContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/s_0UFBn1iLw?si=3Jc7vqF-ymE8MeWt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            
             <h4>Problem</h4>
             <p>Use analytical logic and truth tables to develop Sum of Product/Product of Sum expressions for numbers, implement these using logic gates such as AND, OR, etc. and model this using Multisim as well as a physical build. </p>
             <div className='ProjectImageContainer'>

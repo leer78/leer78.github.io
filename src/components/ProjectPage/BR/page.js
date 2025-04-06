@@ -34,6 +34,7 @@ const BR = () => {
                     <div className="skillItem">Telemetry</div>
                 </div>
 
+
                 <h4>Overview</h4>
                 <p>
                     Baja SAE is an off-road racing competition where university teams design and build single-seat vehicles

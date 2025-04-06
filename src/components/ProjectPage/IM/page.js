@@ -33,6 +33,11 @@ const IM = () => {
 
                 <h4>Overview</h4>
                 <p>Manufactured Ironman Helmet based on online tutorials to garner experience in 3D printing, the finishing process, and circuitry.</p>
+                
+                <div className="YouTubeContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ouB3i_wb7CI?si=bcBZqKMwS08gFdqn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
                 <h4>Problem</h4>
                 <p>Put together an Ironman Helmet for personal interests!</p>
                 <h4>Implementation</h4>
