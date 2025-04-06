@@ -22,7 +22,7 @@ const RA = () => {
             </div>
             <div className="ProjectContainer">
                 <h1>Robotic Arm + Haptic Glove</h1>
-                <h2>Featured Multidisciplinary Personal Project</h2>
+                <h2>Personal Project</h2>
                 {/* <a href = "" target="_blank" id = 'externalLinkIconGithub'><AiFillGithub size = {25} color = 'rgb(16, 175, 159)'/></a> */}
 
                 <h3>2023</h3>
@@ -35,6 +35,11 @@ const RA = () => {
 
                 <h4>Overview</h4>
                 <p>A robotic arm with fingers controlled via a haptic glove that I designed. The fingers clench using a fishing line controlled by servo motors, resisted by rubber strings. The haptic glove uses a potentiometer + coiled springs to measure the movement in fingers, which is then mimicked in the respective fingers.</p>
+                <div className='ProjectImageContainer'>
+                    <figure><img src='/images/RAimg12.png' alt='' /><figcaption>Render</figcaption> </figure>
+                    <figure><img src='/images/RAimg13.png' alt='' /><figcaption>Render 2</figcaption> </figure>
+                </div>
+                
                 <p>The inspiration for this project was originally just making the robotic hand because I thought it would be a cool challenge. It was only when I was done the arm that I decided to have a better method of controlling it, so I looked into methods of doing so. A haptic glove meant for VR seemed like a great fit, as I'd be able to replicate my own movements in the arm. </p>
                 <p>Potential uses for the project include prosthetics or remotely operated robot end effectors.</p>
 

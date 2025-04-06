@@ -15,7 +15,7 @@ const MK = () =>{
         <div className="banner">  
             <h1>Ryan Lee - Project Portfolio</h1>
             <div className = "buttons">
-                <Link to="/RoboticArm+HapticGlove" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
+                <Link to="/MarsRover" id = 'button'><FiArrowLeft size = {20} color = 'black'/></Link>
                 <Link to="/" id = 'button'><AiOutlineHome size = {20} color = 'black'/></Link>
                 <Link to="/PID" id = 'button'><FiArrowRight size = {20} color = 'black'/></Link>
             </div>

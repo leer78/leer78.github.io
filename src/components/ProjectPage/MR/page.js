@@ -41,6 +41,10 @@ const MR = () => {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/rB0v62etmcA?si=KDU2jALU6ZitLLWo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
+                <div className='ProjectImageContainerLarge'>
+                    <figure><img src='/images/MRimg6.png' alt='' /><figcaption>Render</figcaption></figure>
+                </div>
+
                 <h4>Problem</h4>
                 <p>I wanted to develop a well-engineered, flushed-out robotic vehicle that mimicked the real Perseverance rover, with functional movement and control systems. The challenge was to scale down the design effectively while maintaining structural integrity and maneuverability.</p>
 
@@ -61,7 +65,7 @@ const MR = () => {
                 <p>The electronics were designed to provide independent motor control for all six wheels, allowing the rover to navigate different terrains effectively. A 12V LiPo battery served as the main power source, with a buck converter stepping down the voltage for the DC motors.</p>
                 <p>Each wheel was powered by a DC motor controlled via motor drivers, ensuring smooth acceleration and direction control. Steering was handled using servo motors, allowing the wheels to change angle dynamically for improved maneuverability.</p>
                 <p>The rover was controlled wirelessly using a FlySky remote, providing real-time inputs for movement. A stepper motor and servo system were added to enable camera panning, allowing live video feedback from an onboard camera module. This setup mimicked the Perseverance rover’s ability to survey its surroundings.</p>
-                <div className='ProjectImageContainer'>
+                <div className='ProjectImageContainerLarge'>
                     <figure><img src='/images/MRimg4.png' alt='' /><figcaption>Wiring diagram</figcaption></figure>
                 </div>
                 <h5>Step 4: Testing & Optimization</h5>
