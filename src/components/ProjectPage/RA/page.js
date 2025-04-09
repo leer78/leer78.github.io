@@ -15,7 +15,7 @@ const RA = () => {
             <div className="banner">
                 <h1>Ryan Lee - Project Portfolio</h1>
                 <div className="buttons">
-                    <Link to="/Escalaid" id='button'><FiArrowLeft size={20} color='black' /></Link>
+                    <Link to="/RCNissanRogue" id='button'><FiArrowLeft size={20} color='black' /></Link>
                     <Link to="/" id='button'><AiOutlineHome size={20} color='black' /></Link>
                     <Link to="/EQMount" id='button'><FiArrowRight size={20} color='black' /></Link>
                 </div>
@@ -39,13 +39,12 @@ const RA = () => {
                     <figure><img src='/images/RAimg12.png' alt='' /><figcaption>Render</figcaption> </figure>
                     <figure><img src='/images/RAimg13.png' alt='' /><figcaption>Render 2</figcaption> </figure>
                 </div>
-                
+
                 <p>The inspiration for this project was originally just making the robotic hand because I thought it would be a cool challenge. It was only when I was done the arm that I decided to have a better method of controlling it, so I looked into methods of doing so. A haptic glove meant for VR seemed like a great fit, as I'd be able to replicate my own movements in the arm. </p>
                 <p>Potential uses for the project include prosthetics or remotely operated robot end effectors.</p>
 
                 <div className="YouTubeContainer">
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/eX1rG0Wb-Ko?si=egeD9SAIwMs7qZoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eX1rG0Wb-Ko?si=egeD9SAIwMs7qZoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
 
 

@@ -112,6 +112,18 @@ const Section = () => {
                 <div className='projectsContainer'>
                     <div className='box'>
                         <div className='folderIcon'><AiFillFolderOpen size={50} /></div>
+                        <Link to="/RCNissanRogue" id='externalLinkIcon'><FiExternalLink size={30} color='rgb(16, 175, 159)' /></Link>
+                        <h3>Model RC Nissan Rogue</h3>
+                        <p>A 1:20 scale model of a Nissan Rogue with motor and geartrain. Refined with stress analysis, motion simulations, and shape optimization</p>
+                        <ul>
+                            <li>2025</li>
+                            <li>CAD</li>
+                            <li>FEA</li>
+                            <li>Prototyping</li>
+                        </ul>
+                    </div>
+                    <div className='box'>
+                        <div className='folderIcon'><AiFillFolderOpen size={50} /></div>
                         <Link to="/RoboticArm+HapticGlove" id='externalLinkIcon'><FiExternalLink size={30} color='rgb(16, 175, 159)' /></Link>
                         <h3>Haptic Glove Controlled Arm</h3>
                         <p>A robotic arm prosthetic aimed to mimic hand movements remotely</p>

@@ -21,6 +21,7 @@ import MR from "./components/ProjectPage/MR/page";
 import EQ from "./components/ProjectPage/EQ/page";
 import MKB from "./components/ProjectPage/MKB/page";
 import BR from "./components/ProjectPage/BR/page";
+import NR from "./components/ProjectPage/NR/page";
 
 
 //help
@@ -46,6 +47,12 @@ class App extends Component {
                           <Section/>
                       </Fragment>
                     }/>
+                    <Route path="/RCNissanRogue" element= {
+                           <Fragment>
+                              <ScrollToTop/>
+                              <NR />
+                           </Fragment>
+                      }> </Route>
                     <Route path="/McMasterBajaRacing" element= {
                            <Fragment>
                               <ScrollToTop/>
