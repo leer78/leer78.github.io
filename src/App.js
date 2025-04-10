@@ -1,3 +1,4 @@
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { Component, Fragment } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Section from "./components/Sections/Section";
@@ -23,10 +24,9 @@ import MKB from "./components/ProjectPage/MKB/page";
 import BR from "./components/ProjectPage/BR/page";
 import NR from "./components/ProjectPage/NR/page";
 
-
 //help
 import ScrollToTop from "./components/ScrollToTop";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 // import {  Fragment } from 'react';
 
 class App extends Component {
