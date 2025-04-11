@@ -49,6 +49,7 @@ const MKB = () => {
                 <div className='ProjectImageContainerLarge'>
                     <figure><img src='/images/MKBimg1.png' alt='' /><figcaption>Final Version</figcaption></figure>
                     <figure><img src='/images/MKBimg4.png' alt='' /><figcaption>Final Build</figcaption></figure>
+                    <figure><img src='/images/MKBimg19.png' alt='' /><figcaption>Being Worn</figcaption></figure>
                 </div>
                 <div className="YouTubeContainer">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/-kGofGQWPC4?si=y6EHZSykpyhgdmT9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
