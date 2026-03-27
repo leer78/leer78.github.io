@@ -1,0 +1,120 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  year: number;
+  tags: string[];
+  slug: string;
+  heroImage?: string;
+}
+
+const { title, summary, year, tags, slug, heroImage } = Astro.props;
+---
+
+<a href={`/projects/${slug}`} class="project-card">
+  {heroImage && (
+    <div class="card-image">
+      <img src={heroImage} alt={title} loading="lazy" />
+    </div>
+  )}
+  <div class="card-content">
+    <h3>{title}</h3>
+    <p>{summary}</p>
+    <div class="card-footer">
+      <span class="year">{year}</span>
+      <div class="tags">
+        {tags.map((tag) => <span class="tag">{tag}</span>)}
+      </div>
+    </div>
+  </div>
+</a>
+
+<style>
+  .project-card {
+    display: block;
+    background: #fbfaf7;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+    border: 1px solid #d8d8d8;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+  }
+
+  .project-card:hover h3 {
+    color: #111111;
+  }
+
+  .card-image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+
+  .project-card:hover .card-image img {
+    transform: scale(1.03);
+  }
+
+  .card-content {
+    padding: 0.9rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+    margin-bottom: 0.4rem;
+    transition: color 0.2s;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: #555555;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+  }
+
+  .card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .year {
+    font-size: 0.75rem;
+    color: #777777;
+    font-family: var(--font-mono);
+    margin-right: 0.3rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-family: var(--font-mono);
+  }
+</style>

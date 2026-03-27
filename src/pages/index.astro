@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Profile from '../components/Profile.astro';
+import ProjectGrid from '../components/ProjectGrid.astro';
+import Experience from '../components/Experience.astro';
+import Contact from '../components/Contact.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+---
+
+<BaseLayout>
+  <Navbar />
+  <div class="site-content">
+    <Hero />
+    <Profile />
+    <ProjectGrid projects={projects} />
+    <Experience />
+    <Contact />
+  </div>
+</BaseLayout>
+
+<style is:global>
+  .section {
+    padding: 4rem 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding: 0 2rem;
+  }
+
+  .section-header h2 {
+    font-size: clamp(3rem, 6vw, 3.75rem);
+    font-family: var(--font-sans);
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .section-header .quote {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .section-header hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    width: 60%;
+    max-width: 500px;
+    margin: 1rem auto 0;
+  }
+</style>
+	</body>
+</html>

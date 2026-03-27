@@ -1,0 +1,169 @@
+---
+import ProjectCard from './ProjectCard.astro';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  projects: CollectionEntry<'projects'>[];
+}
+
+const { projects } = Astro.props;
+
+const featured = projects
+  .filter(p => p.data.featured)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const regular = projects
+  .filter(p => !p.data.featured)
+  .sort((a, b) => b.data.year - a.data.year);
+---
+
+<section class="projects section" id="Projects">
+  <div class="section-header">
+    <h2>Projects</h2>
+    <p class="quote">"I don't spend my time pontificating about high-concept things; I spend my time solving engineering and manufacturing problems." — Elon Musk</p>
+    <hr />
+  </div>
+
+  {featured.length > 0 && (
+    <div class="featured-projects">
+      {featured.map((project) => (
+        <a href={`/projects/${project.data.slug}`} class="featured-card">
+          {project.data.heroImage && (
+            <div class="featured-image">
+              <img src={project.data.heroImage} alt={project.data.title} />
+            </div>
+          )}
+          <div class="featured-info">
+            <span class="featured-badge">{project.data.featuredLabel || "Featured"}</span>
+            <h3>{project.data.title}</h3>
+            <p>{project.data.summary}</p>
+            <span class="learn-more">Learn More →</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  )}
+
+  <div class="project-grid">
+    {regular.map((project) => (
+      <ProjectCard
+        title={project.data.title}
+        summary={project.data.summary}
+        year={project.data.year}
+        tags={project.data.tags}
+        slug={project.data.slug}
+        heroImage={project.data.heroImage}
+      />
+    ))}
+  </div>
+</section>
+
+<style>
+  .projects {
+    background: #f3f1eb;
+  }
+
+  .featured-projects {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+  }
+
+  .featured-card {
+    display: flex;
+    gap: 2rem;
+    background: #fbfaf7;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #d8d8d8;
+  }
+
+  .featured-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-decoration: none;
+  }
+
+  .featured-image {
+    flex: 0 0 250px;
+    overflow: hidden;
+  }
+
+  .featured-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .featured-info {
+    padding: 1.35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .featured-badge {
+    display: inline-block;
+    width: fit-content;
+    font-size: 0.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: white;
+    background: var(--accent);
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 0.65rem;
+  }
+
+  .featured-info h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+    margin-bottom: 0.4rem;
+  }
+
+  .featured-info p {
+    color: #555555;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+  }
+
+  .learn-more {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+
+  .project-grid {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    .featured-card {
+      flex-direction: column;
+    }
+
+    .featured-image {
+      flex: none;
+      height: 200px;
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

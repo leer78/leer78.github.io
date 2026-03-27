@@ -1,0 +1,137 @@
+---
+---
+
+<section class="profile section" id="Profile">
+  <div class="section-header">
+    <h2>Profile</h2>
+    <p class="quote">"Engineers like to solve problems. If there are no problems handily available, they will create their own problems." — Scott Adams</p>
+    <hr />
+  </div>
+
+  <div class="profile-grid">
+    <div class="profile-about">
+      <h3>About me</h3>
+      <p>Hi there! I'm Ryan and this is my project portfolio. I'm using it to share some of the personal projects I've worked on tying academic teachings and practical experiences together.</p>
+      <p>Most of these projects are done out of a challenge, problem, or boredom; I just like to build things!</p>
+    </div>
+
+    <div class="profile-photo">
+      <img src="/images/profile.jpg" alt="Ryan Lee" />
+    </div>
+
+    <div class="profile-details">
+      <h3>Details</h3>
+      <dl>
+        <dt>Name</dt>
+        <dd>Ryan Lee</dd>
+        <dt>Area of Study</dt>
+        <dd>Mechatronics Engineering</dd>
+        <dt>Interests</dt>
+        <dd>Robotics, Space, Computation, Automation, and Design</dd>
+        <dt>Hobbies</dt>
+        <dd>Climbing/Bouldering, Hockey, Football, Music, Astrophotography</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="resume-link">
+    <a href="/RyanLee_Resume.pdf" target="_blank">View my resume →</a>
+  </div>
+</section>
+
+<style>
+  .profile {
+    background: var(--bg-secondary);
+  }
+
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    align-items: start;
+  }
+
+  .profile-about h3,
+  .profile-details h3 {
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  .profile-about p {
+    color: var(--text-secondary);
+    margin-bottom: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+  }
+
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-photo img {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--border);
+  }
+
+  .profile-details dl {
+    font-size: 0.95rem;
+  }
+
+  .profile-details dt {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.8rem;
+  }
+
+  .profile-details dt:first-child {
+    margin-top: 0;
+  }
+
+  .profile-details dd {
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+
+  .resume-link {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .resume-link a {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: background 0.2s;
+  }
+
+  .resume-link a:hover {
+    background: var(--accent-dim);
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .profile-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .profile-photo {
+      order: -1;
+    }
+  }
+</style>

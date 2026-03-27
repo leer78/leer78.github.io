@@ -1,0 +1,91 @@
+---
+const sections = ["Home", "Profile", "Projects", "Experiences"];
+---
+
+<nav class="nav" id="sidebar-nav">
+  {sections.map((section) => (
+    <a href={`/#${section}`} class="nav-item" data-section={section}>
+      {section}
+    </a>
+  ))}
+</nav>
+
+<script>
+  function initNav() {
+    const navItems = document.querySelectorAll('.nav-item');
+    const sectionIds = Array.from(navItems).map(item => item.getAttribute('data-section')!);
+
+    function updateActive() {
+      let current = sectionIds[0];
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 150) {
+            current = id;
+          }
+        }
+      }
+      navItems.forEach(item => {
+        item.classList.toggle('active', item.getAttribute('data-section') === current);
+      });
+    }
+
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+  }
+
+  initNav();
+  document.addEventListener('astro:after-swap', initNav);
+</script>
+
+<style>
+  .nav {
+    position: fixed;
+    top: 50%;
+    right: 1%;
+    transform: translateY(-50%);
+    width: 150px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background: rgb(46, 46, 46);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+  }
+
+  .nav-item {
+    display: block;
+    padding: 24px 18px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .nav-item:hover {
+    color: rgb(141, 141, 141);
+    text-decoration: none;
+  }
+
+  .nav-item:active {
+    font-size: large;
+  }
+
+  .nav-item.active {
+    background-color: var(--accent);
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+    }
+  }
+</style>
