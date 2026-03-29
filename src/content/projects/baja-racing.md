@@ -1,7 +1,7 @@
 ---
 title: "McMaster Baja Racing"
 slug: "mcmaster-baja-racing"
-year: 2022
+year: 2025
 featured: true
 featuredLabel: "Baja Racing"
 order: 1

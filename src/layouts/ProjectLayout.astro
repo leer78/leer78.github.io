@@ -260,6 +260,15 @@ const youtubeEmbedUrl = getYouTubeEmbedUrl(youtube);
     margin: 1.5rem 0;
   }
 
+  .project-content :global(.image-row-four) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: start;
+  }
+
+  .project-content :global(.image-row-four figure) {
+    margin: 0;
+  }
+
   .project-content :global(.image-row img) {
     width: 100%;
     margin: 0;
@@ -309,5 +318,11 @@ const youtubeEmbedUrl = getYouTubeEmbedUrl(youtube);
 
   .project-footer a:hover {
     color: var(--accent);
+  }
+
+  @media (max-width: 768px) {
+    .project-content :global(.image-row-four) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 </style>
