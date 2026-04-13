@@ -112,6 +112,29 @@ Each joint uses a custom 15:1 cycloidal gear drive, delivering 12 Nm of torque w
 
 Inverse kinematics algorithms compute the required joint angles from a desired end-effector position and orientation. This allows the arm to be commanded in Cartesian space rather than requiring manual specification of each joint angle.
 
+- I broke the kinematics into 2 parts: an RRR arm and a spherical wrist manipulator.
+- For positioning, I isolate the wrist joint and solve the XZ-plane geometry with joint 2 and joint 3, while joint 1 sets the base yaw.
+- For orientation, joint 4, joint 5, and joint 6 control the wrist, with joint 4 and joint 6 handling roll and joint 5 handling pitch.
+- From a desired end-effector position and orientation, the required joint angles can then be solved directly.
+
+<div class="image-large">
+  <figure><img src="/images/DOF19.jpg" alt="Inverse kinematics math for the 6-DOF robotic arm" /><figcaption>Inverse kinematics decomposition</figcaption></figure>
+</div>
+
+- I used a Denavit-Hartenberg model to define frame assignments and link dimensions for the full arm.
+
+<div class="image-large">
+  <figure><img src="/images/DOF22.png" alt="Denavit-Hartenberg frame assignments and dimensions for the 6-DOF arm" /><figcaption>DH frame assignments and sizing</figcaption></figure>
+</div>
+
+- I estimated the wrist and end-effector workspace in the XZ plane by setting joint 4 = 0 and joint 6 = 0 and plotting constrained random joint values.
+- With 100 samples the boundary is rough, while 10000 Monte Carlo samples give a much clearer reference for all reachable positions.
+
+<div class="image-row">
+  <figure><img src="/images/DOF20.png" alt="Workspace plot with 100 constrained random joint samples" /><figcaption>100 samples</figcaption></figure>
+  <figure><img src="/images/DOF21.png" alt="Workspace plot with 10000 constrained random joint samples" /><figcaption>10000 samples</figcaption></figure>
+</div>
+
 ## Results
 
 The completed arm achieves smooth, controlled motion across all 6 axes with enough torque and precision for pick-and-place tasks. The ROS2 integration enables future expansion into vision-guided manipulation and more advanced path planning.
