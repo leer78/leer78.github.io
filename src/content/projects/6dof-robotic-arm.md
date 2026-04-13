@@ -3,7 +3,7 @@ title: "6 Axis Robotic Arm"
 slug: "6dof-robotic-arm"
 year: 2026
 featured: true
-featuredLabel: "Featured Project"
+featuredLabel: "Featured Project (Ongoing)"
 order: 3
 summary: "A 6-DOF robotic arm with cycloidal gear drives, inverse kinematics, and simulation"
 subtitle: "Personal Robotics Project"

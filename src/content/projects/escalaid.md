@@ -3,7 +3,7 @@ title: "EscalAid Assistive Knee Brace"
 slug: "escalaid"
 year: 2025
 featured: true
-featuredLabel: "Featured Project (Ongoing)"
+featuredLabel: "Featured Project"
 order: 2
 summary: "Motorized knee brace supporting 40% body weight on stairs, using IMU gait analysis and PID control"
 subtitle: "Mechatronics Capstone Project"
