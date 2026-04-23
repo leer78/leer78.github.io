@@ -2,104 +2,12 @@
 ---
 
 <section class="hero" id="Home">
-  <canvas id="starfield"></canvas>
   <div class="hero-inner">
-    <h1>Ryan Lee</h1>
+    <h1 class="page-title">Ryan Lee</h1>
     <hr />
     <p class="tagline">I like to build things.</p>
   </div>
 </section>
-
-<script>
-  function initStarfield() {
-    const canvas = document.getElementById('starfield') as HTMLCanvasElement;
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const STAR_COUNT = 300;
-    const SPEED = 4;
-
-    let w = 0;
-    let h = 0;
-
-    interface Star {
-      x: number;
-      y: number;
-      z: number;
-      pz: number;
-    }
-
-    const stars: Star[] = [];
-
-    function resize() {
-      w = canvas.width = canvas.offsetWidth;
-      h = canvas.height = canvas.offsetHeight;
-    }
-
-    function randomStar(): Star {
-      return {
-        x: (Math.random() - 0.5) * w,
-        y: (Math.random() - 0.5) * h,
-        z: Math.random() * w,
-        pz: 0,
-      };
-    }
-
-    function init() {
-      resize();
-      stars.length = 0;
-      for (let i = 0; i < STAR_COUNT; i++) {
-        const s = randomStar();
-        s.pz = s.z;
-        stars.push(s);
-      }
-    }
-
-    function frame() {
-      ctx!.clearRect(0, 0, w, h);
-
-      const cx = w / 2;
-      const cy = h / 2;
-
-      for (const star of stars) {
-        star.pz = star.z;
-        star.z -= SPEED;
-
-        if (star.z <= 0) {
-          Object.assign(star, randomStar());
-          star.pz = star.z;
-          continue;
-        }
-
-        const sx = (star.x / star.z) * w * 0.5 + cx;
-        const sy = (star.y / star.z) * h * 0.5 + cy;
-        const px = (star.x / star.pz) * w * 0.5 + cx;
-        const py = (star.y / star.pz) * h * 0.5 + cy;
-
-        // Skip if off screen
-        if (sx < 0 || sx > w || sy < 0 || sy > h) continue;
-
-        const depth = 1 - star.z / w;
-        const size = depth * 2.5;
-
-        ctx!.beginPath();
-        ctx!.fillStyle = `rgba(255, 255, 255, ${depth * 0.9})`;
-        ctx!.arc(sx, sy, size * 0.6, 0, Math.PI * 2);
-        ctx!.fill();
-      }
-
-      requestAnimationFrame(frame);
-    }
-
-    init();
-    frame();
-    window.addEventListener('resize', resize);
-  }
-
-  initStarfield();
-  document.addEventListener('astro:after-swap', initStarfield);
-</script>
 
 <style>
   .hero {
@@ -128,36 +36,26 @@
     z-index: 1;
   }
 
-  #starfield {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+  .hero-inner {
+    position: relative;
     z-index: 2;
   }
 
-  .hero-inner {
-    position: relative;
-    z-index: 3;
-  }
-
-  .hero-inner h1 {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    font-weight: 300;
-    color: white;
-    letter-spacing: 0.02em;
+  .page-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    color: black;
   }
 
   .hero-inner hr {
-    width: 200px;
+    width: 300px;
     border: none;
-    border-top: 1px solid white;
+    border-top: 1px solid black;
     margin: 1rem auto;
   }
 
   .tagline {
     font-size: clamp(1rem, 2.5vw, 1.4rem);
-    color: white;
+    color: black;
     font-weight: 400;
   }
 </style>

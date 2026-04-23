@@ -3,7 +3,7 @@
 
 <section class="profile section" id="Profile">
   <div class="section-header">
-    <h2>Profile</h2>
+    <h2 class="page-title">Profile</h2>
     <p class="quote">"Engineers like to solve problems. If there are no problems handily available, they will create their own problems." — Scott Adams</p>
     <hr />
   </div>
@@ -42,7 +42,14 @@
 
 <style>
   .profile {
-    background: var(--bg-secondary);
+    background: #e7e2d5;
+    --section-heading-color: #1f1f1f;
+  }
+
+  .profile .section-header .quote {
+    font-weight: 300;
+    font-synthesis: none;
+    color: var(--text-muted);
   }
 
   .profile-grid {
@@ -64,7 +71,7 @@
   }
 
   .profile-about p {
-    color: var(--text-secondary);
+    color: #555555;
     margin-bottom: 0.8rem;
     font-size: 0.95rem;
     font-weight: 400;
@@ -88,7 +95,7 @@
   }
 
   .profile-details dt {
-    color: var(--text-muted);
+    color: #6b625f;
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -100,7 +107,7 @@
   }
 
   .profile-details dd {
-    color: var(--text-secondary);
+    color: #555555;
     font-weight: 400;
   }
 

@@ -3,7 +3,7 @@
 
 <section class="experiences section" id="Experiences">
   <div class="section-header">
-    <h2>Experiences</h2>
+    <h2 class="page-title">Experiences</h2>
     <p class="quote">"I believe every human has a finite number of heartbeats. I don't intend to waste any of mine." — Neil Armstrong</p>
     <hr />
   </div>
@@ -193,7 +193,14 @@
 
 <style>
   .experiences {
-    background: var(--bg-secondary);
+    background: #e7e2d5;
+    --section-heading-color: #1f1f1f;
+  }
+
+  .experiences .section-header .quote {
+    font-weight: 300;
+    font-synthesis: none;
+    color: var(--text-muted);
   }
 
   .exp-category {
@@ -216,7 +223,7 @@
     gap: 2rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .exp-entry:last-child {
@@ -242,24 +249,24 @@
   .exp-org {
     font-weight: 400;
     font-size: 1rem;
-    color: var(--text-primary);
+    color: #1f1f1f;
   }
 
   .exp-dates {
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: #6b625f;
     font-family: var(--font-mono);
   }
 
   .exp-right h4 {
     font-size: 1.1rem;
     font-weight: 400;
-    color: white;
+    color: #1f1f1f;
     margin-bottom: 0.5rem;
   }
 
   .exp-right p {
-    color: var(--text-secondary);
+    color: #555555;
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
@@ -268,7 +275,7 @@
   .exp-right ul {
     margin: 0.5rem 0 0.8rem 1.2rem;
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: #555555;
   }
 
   .exp-right li {
@@ -294,7 +301,7 @@
     display: flex;
     gap: 1rem;
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: #6b625f;
     margin-top: 0.5rem;
   }
 
